@@ -1,0 +1,18 @@
+name: Validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  repo-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate repository structure
+        run: python tools/validate_repo.py
+      - name: Validate One Tile Left levels
+        run: python tools/validate_one_tile_left.py

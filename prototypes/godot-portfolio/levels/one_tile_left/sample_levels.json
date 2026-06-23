@@ -1,0 +1,40 @@
+[
+  {
+    "id": "tutorial-gap",
+    "name": "Tutorial Gap",
+    "size": 3,
+    "target": [1, 1],
+    "pieces": [
+      {"id": "top-row", "cells": [[0, 0], [1, 0], [2, 0]], "allowed_origins": [[0, 0]]},
+      {"id": "bottom-row", "cells": [[0, 0], [1, 0], [2, 0]], "allowed_origins": [[0, 2]]},
+      {"id": "side-pair", "cells": [[0, 0], [2, 0]], "allowed_origins": [[0, 1]]}
+    ]
+  },
+  {
+    "id": "last-corner",
+    "name": "Last Corner",
+    "size": 4,
+    "target": [3, 3],
+    "pieces": [
+      {"id": "north", "cells": [[0, 0], [1, 0], [2, 0], [3, 0]], "allowed_origins": [[0, 0]]},
+      {"id": "middle-a", "cells": [[0, 0], [1, 0], [2, 0], [3, 0]], "allowed_origins": [[0, 1]]},
+      {"id": "middle-b", "cells": [[0, 0], [1, 0], [2, 0], [3, 0]], "allowed_origins": [[0, 2]]},
+      {"id": "south", "cells": [[0, 0], [1, 0], [2, 0]], "allowed_origins": [[0, 3]]}
+    ]
+  },
+  {
+    "id": "quiet-cross",
+    "name": "Quiet Cross",
+    "size": 5,
+    "target": [2, 2],
+    "pieces": [
+      {"id": "top-band", "cells": [[0, 0], [1, 0], [2, 0], [3, 0], [4, 0]], "allowed_origins": [[0, 0]]},
+      {"id": "bottom-band", "cells": [[0, 0], [1, 0], [2, 0], [3, 0], [4, 0]], "allowed_origins": [[0, 4]]},
+      {"id": "left-column", "cells": [[0, 0], [0, 1], [0, 2]], "allowed_origins": [[0, 1]]},
+      {"id": "right-column", "cells": [[0, 0], [0, 1], [0, 2]], "allowed_origins": [[4, 1]]},
+      {"id": "upper-interior", "cells": [[0, 0], [1, 0], [2, 0]], "allowed_origins": [[1, 1]]},
+      {"id": "lower-interior", "cells": [[0, 0], [1, 0], [2, 0]], "allowed_origins": [[1, 3]]},
+      {"id": "middle-pair", "cells": [[0, 0], [2, 0]], "allowed_origins": [[1, 2]]}
+    ]
+  }
+]
